@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react"
 
-export type ImagePixelatedProps = {
+export type ImagePixelatedProps = React.CanvasHTMLAttributes<HTMLCanvasElement> & {
   src: string
   width?: number
   height?: number
@@ -15,7 +15,8 @@ export const ImagePixelated = ({
   height,
   pixelSize = 5,
   centered,
-  fillTransparencyColor
+  fillTransparencyColor,
+  ...props
 }: ImagePixelatedProps) => {
   const canvasRef = useRef<HTMLCanvasElement>()
   useEffect(() => {
@@ -60,7 +61,7 @@ export const ImagePixelated = ({
     img: HTMLImageElement,
     pixelSize?: number,
     centered?: boolean,
-    fillTransparencyColor?: string
+    fillTransparencyColor?: string,
   ) => {
     if (!isNaN(pixelSize) && pixelSize > 0) {
       for (let x = 0; x < img.width + pixelSize; x += pixelSize) {
@@ -95,5 +96,5 @@ export const ImagePixelated = ({
       }
     }
   }
-  return <canvas ref={canvasRef} />
+  return <canvas ref={canvasRef} {...props} />
 }
