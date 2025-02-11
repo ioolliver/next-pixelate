@@ -1,15 +1,16 @@
 {
-  "name": "react-pixelate",
+  "name": "next-pixelate",
   "version": "0.0.1",
-  "description": "React library to pixelate images or elements",
-  "title": "React Pixelate",
+  "description": "NextJS library to pixelate images or elements",
+  "title": "NextJS Pixelate",
   "keywords": [
     "react",
     "react-component",
     "pixel",
     "pixelate",
     "react-pixelate",
-    "blur element"
+    "blur element",
+    "next-pixelate"
   ],
   "main": "build/index.js",
   "scripts": {
@@ -21,11 +22,11 @@
   "author": "Tony Nguyen tonynguyenit18@gmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tonynguyenit18/react-pixelate"
+    "url": "https://github.com/ioolliver/next-pixelate"
   },
-  "homepage": "https://github.com/tonynguyenit18/react-pixelate#readme",
+  "homepage": "https://github.com/ioolliver/next-pixelate#readme",
   "bugs": {
-    "url": "https://github.com/tonynguyenit18/react-pixelate/issues"
+    "url": "https://github.com/ioolliver/next-pixelate/issues"
   },
   "license": "ISC",
   "devDependencies": {
